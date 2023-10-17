@@ -1,0 +1,39 @@
+:root {
+    --width-editor: 800px;
+    --primary-color: aquamarine;
+    --secondary-color: blue
+}
+
+.textEdit{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    padding-top: 20px;
+    width: var(--width-editor);
+}
+
+.textEdit__header{
+    display: grid;
+    grid-template-columns: 25px 1fr 30px;
+    grid-template-rows: 25px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 8px 0 8px 0;
+}
+
+.textEdit__header--title{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.textEdit__textarea{
+    font-size: 20px;
+    overflow-y: auto;
+    resize: vertical;
+    height: 240px;
+    background-color: var(--primary-color);
+}

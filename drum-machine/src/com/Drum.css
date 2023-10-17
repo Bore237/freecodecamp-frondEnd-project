@@ -1,0 +1,126 @@
+.ctn-div{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    border: 6px solid orange;
+    background-color: rgb(168, 162, 162);
+    position: absolute;
+}
+
+@media screen and (max-width: 650px) {
+    .ctn-div{
+        transform: scale(0.8);
+        flex-direction: column;
+    }
+}
+
+.logo{
+    position:absolute;
+    top: 6px;
+    right: 10px;
+    text-align: right;
+}
+
+.inner-logo{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.ctn_input-div{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 20px;
+    /*box-shadow: black 3px 3px 5px;*/
+}
+
+.ctn_output-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 320px;
+    height: 260px;
+    gap: 20px
+}
+
+.btn_imput{
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: grey;
+}
+
+.btn_imput:hover{
+    cursor: pointer;
+}
+
+.btn_imput:active{
+    background-color: orange;
+}
+
+.select-div{
+    border: 4px solid black;
+    width: 60px;
+    height: 26px;
+    position: relative;
+    background-color: black;
+}
+
+.moved {
+    transform: translateX(100%);
+}
+
+.select-state_Btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-div-btn{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    margin: 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h3{
+    margin: 4px;
+    padding: 0;
+}
+
+.ctn_output-scream{
+    width: 280px;
+    height: 70px;
+    background-color: grey;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 18px 0 18px 0;
+}
+
+
+
+.select_volume:hover, .select-div:hover{
+    cursor: pointer;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background-color: #2a2828;
+    height: 8px;
+    width: 300px;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 30px;
+    background-color: #3513f5;
+  }

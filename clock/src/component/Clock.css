@@ -1,0 +1,68 @@
+.clock-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Times, Times New Roman, serif;
+}
+
+.title{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.screem{
+    border: 10px solid rgb(52, 46, 58);
+    padding: 30px 60px 10px 60px;
+    border-radius: 60px;
+    margin: 20px 0px 10px 0px;
+}
+
+.header-screem{
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.containt-screem{
+    text-align: center;
+    font-size: 120px;
+}
+
+.group-setbtn{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.icon-group-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-btn, .value-btn{
+    display: block;
+    font-size: 50px;
+    margin: 0;
+}
+
+.icon-up-down {
+    cursor: pointer;
+    display: block;
+}
+
+.group-runbtn{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.authors{
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}

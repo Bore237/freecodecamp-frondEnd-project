@@ -1,0 +1,86 @@
+:root {
+    --width-previewer: 1000px;
+    --primary-color: aquamarine;
+    --secondary-color: blue
+}
+
+.printText{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    padding-top: 20px;
+    width: var(--width-previewer);
+}
+
+.printText__header{
+    display: grid;
+    grid-template-columns: 25px 1fr 30px;
+    grid-template-rows: 25px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 8px 4px 8px 6px;
+}
+
+.printText__header--title{
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.move:hover{
+    color: #57e2b1;
+    cursor: pointer;
+}
+
+.printText__textarea{
+    overflow: auto;
+    height: 1400px;
+    background-color: var(--primary-color);
+    resize: vertical;
+    width: 100%;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.printText__textarea h1, h2{
+    text-decoration: underline;
+}
+
+.printText__textarea img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.printText__textarea pre{
+    display: block;
+    overflow: auto;
+    background-color: whitesmoke;
+    padding: 6px;
+    line-height: 1.2;
+}
+
+.printText__textarea code{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.printText__textarea table{
+    border-collapse: collapse;
+}
+
+.printText__textarea th, .printText__textarea td{
+    border: 4px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.printText__textarea blockquote{
+    border-left: 10px solid black;
+    margin-left: 24px;
+    padding-left: 6px;
+}
