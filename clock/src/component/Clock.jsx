@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import { useReducer, useEffect } from 'react';
 import { titleBtnData } from './datas'
-import { Howl } from 'howler';
+import { Howl} from 'howler';
 import './Clock.css'
 
 function Clock(){
@@ -47,11 +47,11 @@ function Clock(){
     const [state, dispatch] = useReducer(reducer, initialState)
 
      //Gerer activation de audio 
-     const sound =new Howl({
-        src: 'component/alarm.mp3',
+     const sound = new Howl({
+        src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
         autoplay: false,
         loop: false,
-        volume: 1,
+        volume: 0.9,
         onplay: () => {
             console.log('Audio started playing');
         },
@@ -114,7 +114,7 @@ function Clock(){
         if (state.play) {
           intervalId = setInterval(() => {
             handleTime();
-          }, 300);
+          }, 1000);
         }
     
         return () => {
@@ -184,7 +184,7 @@ function Clock(){
                 <Icon onClick={handleClickReload} icon="ci:arrows-reload-01"  width="60" height="80" />
             </div>
             <footer>
-                <p className='authors'>Designed and Code by</p>
+                <p className='authors'>Designed and Code by Goudjou Borel</p>
             </footer>
         </div>
     )
