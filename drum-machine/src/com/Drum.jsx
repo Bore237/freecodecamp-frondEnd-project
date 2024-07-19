@@ -202,7 +202,6 @@ function Drump(){
                     </div>
                 </div>
             </div>
-            <h2>By Goudjou borel</h2>
         </div>
     )
 }
